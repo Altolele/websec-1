@@ -2,9 +2,22 @@
     <script src = "script.js" ></script>
     <head>
         <title>WebCalculator</title>
-    </head>>
-    <body>
         <link rel="stylesheet" href="style.css" type="text/css">
-        <div></div>
+    </head>>
+    
+    <body>
+        <div class="bground" style="width:fit-content ;">
+            <input type="value" class="focus" id="val1" placeholder="Enter a value"/>
+            <select title="operations" class="focus" id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="value" class="focus" id="val2" placeholder="Enter a value"/>
+            <button class="button" id="button" onclick="calculator()">calculate</button>
+        </div>
+        
+        
     </body>
 </html>

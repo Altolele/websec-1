@@ -1,0 +1,40 @@
+input::-webkit-input-placeholder {
+    text-align: center;
+    }
+
+.bground {
+    margin: auto;
+    border-style:double;
+    border-width: 2px 2px 2px 2px;
+    border-color:rgb(158, 121, 27);
+    border-radius: 15px;
+    background-color:lemonchiffon;
+    padding: 15px;
+    text-align: center;
+}
+.focus:focus-visible{
+    outline: 1px solid rgb(207, 68, 9);
+}
+input[type='value']{
+    border-width: 1px 1px 2px 1px;
+    border-color:rgb(158, 121, 27);
+    font-size: large;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px
+}
+select{
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 40px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.button{
+    margin: auto;
+    border-width: 1px 1px 1px 1px;
+    background-color:antiquewhite;
+    width: 100px;
+    font-size: large;
+    border-radius: 5px;
+}
