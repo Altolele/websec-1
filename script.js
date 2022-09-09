@@ -6,9 +6,6 @@ function calculator() {
         alert('Please, enter the values in the fields');
         return;
     }
-    document.getElementById('val1').oninvalid = function(event) {
-        event.target.setCustomValidity('allo ');
-    }
     let result, res1, res2;
     res1 = document.getElementById('res1');
     res2 = document.getElementById('res2');
