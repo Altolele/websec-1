@@ -2,39 +2,161 @@ input::-webkit-input-placeholder {
     text-align: center;
     }
 
-.bground {
-    margin: auto;
-    border-style:double;
-    border-width: 2px 2px 2px 2px;
-    border-color:rgb(158, 121, 27);
-    border-radius: 15px;
-    background-color:lemonchiffon;
-    padding: 15px;
-    text-align: center;
-}
-.focus:focus-visible{
-    outline: 1px solid rgb(207, 68, 9);
-}
-input[type='value']{
-    border-width: 1px 1px 2px 1px;
-    border-color:rgb(158, 121, 27);
-    font-size: large;
-    border-radius: 5px;
-    margin: 10px 10px 10px 10px
-}
-select{
-    margin-left: 10px;
-    margin-right: 10px;
-    min-width: 40px;
-    font-size: large;
-    border-radius: 10px;
+@media screen and (min-width: 600px) {
+
+    .backgroundClass {
+        margin: 0 auto;
+        border-style:double;
+        border-width: 2px 2px 2px 2px;
+        border-color:rgb(158, 121, 27);
+        border-radius: 15px;
+        background-color:lemonchiffon;
+        padding: 7px;
+        text-align: center;
+    }
+
+    .blockInputField{
+        display: block;
+    }
+
+    input{
+        border-width: 1px 1px 2px 1px;
+        border-color:rgb(158, 121, 27);
+        font-size: large;
+        border-radius: 5px;
+        margin: 10px 10px 10px 10px
+    }
+
+    input:invalid{
+        border: 2px solid red;
+    }
+
+    input:valid{
+        border: 2px solid rgb(158, 121, 27);
+    }
+
+    .selectOperation{
+        margin: 0 auto;
+        min-width: 40px;
+        font-size: large;
+        border-width: 1px 1px 2px 1px;
+        border-color:rgb(158, 121, 27);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .button{
+        margin: 0 auto;
+        border-color:rgb(158, 121, 27);
+        color:rgb(41, 35, 21);
+        border-width: 1px 1px 1px 1px;
+        background-color:antiquewhite;
+        width: 100px;
+        height: 30px;
+        font-size: large;
+        border-radius: 5px;
+    }
+
+    .outputWindow{
+        
+        display: block;
+        margin: 10px auto;
+        background-color:white;
+        border-style:double;
+        min-height: 60px;
+        max-width: 500px;
+        height:fit-content;
+        border-width: 2px 2px 2px 2px;
+        border-color:rgb(158, 121, 27);
+        border-radius: 5px;
+        font-size: large;
+    }
+
+    .outputResult2{
+        margin: 2px auto;
+        word-break:break-all;
+    }
+    .outputResult1{
+        margin: 2px auto;
+        color:gray;
+        word-break:break-all;
+    }
 }
 
-.button{
-    margin: auto;
-    border-width: 1px 1px 1px 1px;
-    background-color:antiquewhite;
-    width: 100px;
-    font-size: large;
-    border-radius: 5px;
+@media screen and (max-width: 600px) {
+
+    .backgroundClass {
+        margin: auto;
+        border-style:double;
+        border-width: 2px 2px 2px 2px;
+        border-color:rgb(158, 121, 27);
+        border-radius: 15px;
+        background-color:lemonchiffon;
+        padding: 15px;
+        text-align: center;
+    }
+
+    input{
+        border-width: 1px 1px 2px 1px;
+        border-color:rgb(158, 121, 27);
+        font-size:large;
+        border-radius: 5px;
+        margin: 10px 10px 10px 10px
+    }
+    
+    input:invalid{
+        border: 2px solid red;
+    }
+    
+    input:valid{
+        border: 2px solid rgb(158, 121, 27);
+    }
+
+    .selectOperation{
+        margin: 0 auto;
+        min-width: 50px;
+        border-width: 1px 1px 2px 1px;
+        border-color:rgb(158, 121, 27);
+        font-size: large;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+
+    }
+    
+    .button{
+        margin: 5px auto;
+        border-color:rgb(158, 121, 27);
+        color:rgb(41, 35, 21);
+        border-width: 1px 1px 1px 1px;
+        background-color:antiquewhite;
+        width: 100px;
+        height: 30px;
+        font-size: large;
+        border-radius: 5px;
+    }
+    .outputWindow{
+        
+        display: block;
+        margin: 5px auto;
+        background-color:white;
+        border-style:double;
+        min-height: 50px;
+        min-width: 200px;
+        max-width: 300px;
+        height:max-content;
+        border-width: 2px 2px 2px 2px;
+        border-color:rgb(158, 121, 27);
+        border-radius: 5px;
+        font-size: large;
+    }
+    .outputResult2{
+        margin: 2px auto;
+        word-break:break-all;
+    }
+    .outputResult1{
+        margin: 2px auto;
+        color:gray;
+        word-break:break-all
+    }
 }

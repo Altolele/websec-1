@@ -1,23 +1,32 @@
 <html>
-    <script src = "script.js" ></script>
     <head>
         <title>WebCalculator</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-    </head>>
+        <script src = "script.js" ></script>
+    </head>
     
     <body>
-        <div class="bground" style="width:fit-content ;">
-            <input type="value" class="focus" id="val1" placeholder="Enter a value"/>
-            <select title="operations" class="focus" id="operation">
-                <option>+</option>
-                <option>-</option>
-                <option>*</option>
-                <option>/</option>
-            </select>
-            <input type="value" class="focus" id="val2" placeholder="Enter a value"/>
+        <div class="backgroundClass" style="width:fit-content;">
+            <form class="blockInputField">
+                <input type="text" id="val1" required onfocus="this.value=''" 
+                oninput="this.value = this.value.replace(/[^0-9.]/gi, '').replace(/^0\d+/, '0')
+                .replace(/\.\./, '.');" placeholder="Enter a value"/>
+                <select title="operations" class="selectOperation" id="operation">
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    <option value='*'>*</option>
+                    <option value='/'>/</option>
+                </select>
+                <input type="text" id="val2" required onfocus="this.value=''" 
+                oninput="this.value = this.value.replace(/[^0-9.]/gi, '').replace(/^0\d+/, '0')
+                .replace(/\.\./, '.');" placeholder="Enter a value"/>
+            </form>
             <button class="button" id="button" onclick="calculator()">calculate</button>
+            <div class="outputWindow">
+                <p class="outputResult2" id="res2">
+                    <p class="outputResult1" id="res1"></p> 
+                </p>
+            </div>
         </div>
-        
-        
     </body>
-</html>
+
